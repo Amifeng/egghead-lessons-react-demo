@@ -14,7 +14,7 @@ class App extends React.Component {
   }
 }
 
-// 通过在组件中添加一个名为PropTypes的属性来定义要在组件中寻找的属性,对象
+// 通过在组件中添加一个名为PropTypes的属性来定义要在组件中寻找的属性
 App.propTypes = {
   txt: PropTypes.string,
   cat: PropTypes.number
