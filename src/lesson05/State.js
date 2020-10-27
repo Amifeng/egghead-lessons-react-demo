@@ -5,7 +5,6 @@ class State extends React.Component {
     constructor() {
         // 第一件事就是，将调用super。这将为关键字“ this”提供组件中的上下文，而不是其父类React.Component。
         super();
-
         this.state = {
             txt: "this is the state txt",
             cat: 0
