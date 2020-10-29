@@ -1,0 +1,23 @@
+import React from 'react'
+
+class CustomTitle extends React.Component {
+    render() {
+        return <Title text = "123456"/>
+    }
+}
+
+const Title = (props) => <h1>Title: {props.text}</h1>
+
+Title.propTypes = {
+    // text: PropTypes.string.isRequired
+    text(props, propName, component){
+        if (!(propName in props)) {
+            return new Error(`missing ${propName}`)
+        }
+        if ((props[propName].length < 6 )) {
+            return new Error(`${propName} is too short`)
+        }
+    }
+}
+
+export default CustomTitle
