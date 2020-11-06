@@ -6,7 +6,8 @@ import ReactDOM from 'react-dom';
 // import PropsChildren from './lesson06/Props-children'; //by lesson-06
 // import CustomTitle from './lesson07/CustomTitle'; //by lesson-07
 // import Events from './lesson08/Events'; //by lesson-08
-import Reference from './lesson09/Reference'
+// import Reference from './lesson09/Reference'
+import Lifecycles from './lesson10/Lifecycles'
 
 ReactDOM.render(
   // <App txt="This is the prop txt" />,  //by lesson-03
@@ -14,7 +15,8 @@ ReactDOM.render(
   // <PropsChildren />,  //by lesson-06
   // <CustomTitle />,  //by lesson-07
   // <Events />,  //by lesson-08
-  <Reference />,  //by lesson-09
+  // <Reference />,  //by lesson-09
+  <Lifecycles />,  //by lesson-10
 
   document.getElementById('root')
 );
