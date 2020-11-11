@@ -8,7 +8,8 @@ import ReactDOM from 'react-dom';
 // import Events from './lesson08/Events'; //by lesson-08
 // import Reference from './lesson09/Reference'
 // import Lifecycles from './lesson10/Lifecycles'
-import LifecycleMethods from './lesson11/LifecycleMethods'
+// import LifecycleMethods from './lesson11/LifecycleMethods'
+import PropsReceived from './lesson12/PropsReceived'
 
 ReactDOM.render(
   // <App txt="This is the prop txt" />,  //by lesson-03
@@ -18,7 +19,8 @@ ReactDOM.render(
   // <Events />,  //by lesson-08
   // <Reference />,  //by lesson-09
   // <Lifecycles />,  //by lesson-10
-  <LifecycleMethods />,  //by lesson-10
+  // <LifecycleMethods />,  //by lesson-11
+  <PropsReceived />,  //by lesson-12
 
   document.getElementById('root')
 );
