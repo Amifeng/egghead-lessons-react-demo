@@ -4,13 +4,14 @@ import ReactDOM from 'react-dom'
 class Lifecycle extends React.Component {
     constructor() {
         super();
+        console.log('constructor');
         this.state = { val: 0 }
-        // this.update = this.update.bind(this)
+        this.update = this.update.bind(this)
     }
 
-    // update() {
-    //     this.setState({ val: this.state.val + 1 })
-    // }
+    update() {
+        this.setState({ val: this.state.val + 1 })
+    }
 
     update = () => {
         this.setState({ val: this.state.val + 1 })
@@ -23,14 +24,13 @@ class Lifecycle extends React.Component {
 
     render() {
         console.log('render');
-        return <button onClick={this.update}>
+        return <button onClick={this.update.bind(this)}>
             {this.state.val * this.state.m}
         </button>
     }
 
     componentDidMount() {
         console.log('componentDidMount')
-        console.log(ReactDOM.findDOMNode(this))
         this.inc = setInterval(this.update, 500)
     }
 
