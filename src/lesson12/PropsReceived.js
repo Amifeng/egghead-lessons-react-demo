@@ -15,6 +15,8 @@ class PropsReceived extends React.Component {
         )
     }
 
+    UNSAFE_componentWillReceiveProps
+
     componentWillReceiveProps(nextProps) {
         this.setState({ increasing: nextProps.val > this.props.val })
     }
@@ -32,6 +34,7 @@ class PropsReceived extends React.Component {
         )
     }
 
+    // 更新发生后立即调用。初始渲染不调用此方法。
     componentDidUpdate(preProps, preState){
         console.log(`preProps: ${preProps.val}`)
     }
