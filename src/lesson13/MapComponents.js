@@ -11,8 +11,8 @@ class MapComponents extends React.Component {
     componentWillMount() {
         fetch('https://api.github.com/users/Amifeng/repos')
             .then(response => response.json())
-            // .then(({results: items}) => this.setState({ items }))
-            .then(results => this.setState({ items: results }))
+            // .then(({results: items}) => this.setState({ items })) // 将返回json里的results对象命名为 items
+            .then(items => this.setState({ items }))  // 如果参数名和key值一样，即可以简写
     }
 
     // filter(e) {
@@ -25,7 +25,6 @@ class MapComponents extends React.Component {
     render() {
         let items = this.state.items
         let filter = this.state.filter
-
         if (filter) {
             items = items.filter(item =>
                 item.name.toLowerCase()
