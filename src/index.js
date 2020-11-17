@@ -11,7 +11,8 @@ import ReactDOM from 'react-dom';
 // import LifecycleMethods from './lesson11/LifecycleMethods'
 // import PropsReceived from './lesson12/PropsReceived'
 // import MapComponents from './lesson13/MapComponents'
-import HigherOrderComponents from './lesson14/HigherOrderComponents'
+// import HigherOrderComponents from './lesson14/HigherOrderComponents'
+import JSXLiveCompiler from './lesson15/JSXLiveCompiler'
 
 ReactDOM.render(
   // <App txt="This is the prop txt" />,  //by lesson-03
@@ -24,7 +25,8 @@ ReactDOM.render(
   // <LifecycleMethods />,  //by lesson-11
   // <PropsReceived />,  //by lesson-12
   // <MapComponents />,  //by lesson-13
-  <HigherOrderComponents />,  //by lesson-14
+  // <HigherOrderComponents />,  //by lesson-14
+  <JSXLiveCompiler />,  //by lesson-15
 
   document.getElementById('root')
 );
