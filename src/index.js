@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 // import App from './App'; //by lesson-03
 // import State from './lesson04/State'; //by lesson-04
 // import State from './lesson05/State'; //by lesson-05
@@ -12,7 +12,8 @@ import ReactDOM from 'react-dom';
 // import PropsReceived from './lesson12/PropsReceived'
 // import MapComponents from './lesson13/MapComponents'
 // import HigherOrderComponents from './lesson14/HigherOrderComponents'
-import JSXLiveCompiler from './lesson15/JSXLiveCompiler'
+// import JSXLiveCompiler from './lesson15/JSXLiveCompiler'
+import ChildrenUtilities from './lesson16/ChildrenUtilities'
 
 ReactDOM.render(
   // <App txt="This is the prop txt" />,  //by lesson-03
@@ -26,7 +27,8 @@ ReactDOM.render(
   // <PropsReceived />,  //by lesson-12
   // <MapComponents />,  //by lesson-13
   // <HigherOrderComponents />,  //by lesson-14
-  <JSXLiveCompiler />,  //by lesson-15
+  // <JSXLiveCompiler />, //by lesson-15
+  <ChildrenUtilities />, //by lesson-16
 
-  document.getElementById('root')
-);
+  document.getElementById('root'),
+)
