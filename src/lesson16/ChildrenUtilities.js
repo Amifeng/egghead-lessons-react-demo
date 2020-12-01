@@ -18,7 +18,7 @@ class Parent extends Component {
     // let items = this.props.children.map((child) => child)
     // console.log(items)
 
-    // TODO #1
+    // TODO #1: React.Children.map 来遍历子节点，而不用担心 this.props.children 的数据类型是 undefined 还是 object。
     // let items = React.Children.map(this.props.children, (child) => child)
     // console.log(items)
 
@@ -27,13 +27,13 @@ class Parent extends Component {
     // console.log(items)
 
     // TODO #3: 遍历所以的子组件，并输出它们的 className
-    let items = React.Children.forEach(this.props.children, (child) =>
-      console.log(child.props.className),
-    )
+    // let items = React.Children.forEach(this.props.children, (child) =>
+    //   console.log(child.props.className),
+    // )
 
     // TODO #4: 只能处理只有一个子组件的情况，否则会报错
-    // let items = React.Children.only(this.props.children)
-    // console.log(items)
+    let items = React.Children.only(this.props.children)
+    console.log(items)
     return null
   }
 }
