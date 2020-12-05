@@ -13,7 +13,8 @@ import ReactDOM from 'react-dom'
 // import MapComponents from './lesson13/MapComponents'
 // import HigherOrderComponents from './lesson14/HigherOrderComponents'
 // import JSXLiveCompiler from './lesson15/JSXLiveCompiler'
-import ChildrenUtilities from './lesson16/ChildrenUtilities'
+// import ChildrenUtilities from './lesson16/ChildrenUtilities'
+import CloneElementExtend from './lesson17/CloneElementExtend'
 
 ReactDOM.render(
   // <App txt="This is the prop txt" />,  //by lesson-03
@@ -28,7 +29,8 @@ ReactDOM.render(
   // <MapComponents />,  //by lesson-13
   // <HigherOrderComponents />,  //by lesson-14
   // <JSXLiveCompiler />, //by lesson-15
-  <ChildrenUtilities />, //by lesson-16
+  // <ChildrenUtilities />, //by lesson-16
+  <CloneElementExtend />, //by lesson-17
 
   document.getElementById('root'),
 )
